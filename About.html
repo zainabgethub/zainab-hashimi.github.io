@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale= 1.0">
+        <title>University Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/all.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" id="times-id" onclick="hideMenu()"></i>
+                    <ul>
+                        <li> <a href="index.html">HOME</a></li>
+                        <li> <a href="About.html">ABOUT</a></li>
+                        <li> <a href="Course.html">COURSE</a></li> 
+                        <li> <a href="blogs.html">BLOG</a></li>
+                        <li> <a href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" id="bars-id" onclick="showMenu()"></i>
+
+            </nav>
+            <h1>ABOUT US</h1>
+        </section>
+<!----about us content-->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest univeristy</h1>
+            <p>Founded in 1993, AUA develops future leaders for the democratic transformation of America.
+                AUA is an international, multi-disciplinary learning community in the American liberal arts tradition.
+                AUA is the first university to offer US accredited degrees in liberal arts programs through a partnership with Bard College in the United States.
+                In addition to Bard, AUA maintains partnerships with a number of universities and organizations worldwide.</p>
+            <a href="Course.html" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg">
+        </div>
+    </div>
+</section>
+<!----Footer-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>AUA is an international, multi-disciplinary learning community in the American liberal arts tradition.</p>
+</section>
+<!----------------------Javascript for Toggle Menu----------------------------->        
+        <script>
+            var navLinks = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right= "0";
+            }
+            function hideMenu(){
+                navLinks.style.right= "-200px";
+            }
+        </script>
+    </body>
+</html>

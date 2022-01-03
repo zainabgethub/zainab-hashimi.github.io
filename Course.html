@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale= 1.0">
+        <title>University Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/all.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" id="times-id" onclick="hideMenu()"></i>
+
+                    <ul>
+                        <li> <a href="index.html">HOME</a></li>
+                        <li> <a href="About.html">ABOUT</a></li>
+                        <li> <a href="Course.html">COURSE</a></li> 
+                        <li> <a href="blogs.html">BLOG</a></li>
+                        <li> <a href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" id="bars-id" onclick="showMenu()"></i>
+            </nav>
+            <h1>OUR COURSES</h1>
+        </section>
+<!----Course-->
+<section class="Course">
+    <h1>Courses We Offer</h1>
+    <p>We offer IT and IT realted courses in three Basis:</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>New Generation Academy (NGA)</h3>
+            <p> 1) Math 089
+                <br>
+                2) Math 098
+               <br>
+                3) Math 099
+               <br>
+               4) ITC 098
+               <br>
+               5) ITC 099
+               <br>
+               6) ITc 100
+            </p>
+        </div>
+        <div class="course-col">
+                <h3>Under-graduate (UG)</h3>
+                <p>1) ITC 110
+                    <br>
+                   2) ITC 135
+                   <br>
+                   3) ITC 220
+                   <br>
+                   4) ITC 230
+                   <br>
+                   5) Math 110
+                   <br>
+                   6) Math 120
+                </p>
+        </div>
+        <div class="course-col">
+                    <h3>Post-graduation (PG)</h3>
+                    <p>1) ITC 410
+                        <br>
+                       2) ITC 420
+                       <br>
+                       3) ITC 430
+                       <br>
+                       4) ITC 435
+                       <br>
+                       5) ITC 440
+                       <br>
+                       6) ITC 470 
+                    </p>
+        </div> 
+    </div>
+</section>
+<!----facilities-->
+<section class="Facilities">
+    <h1>Our Facilities</h1>
+    <p>Our Facilities Include: </p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png">
+                <h3>World Class Library</h3>
+                <p>Our library has more than 100000 books, articles, journals.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png">
+                <h3>Largest Play Ground</h3>
+                <p>Available for all students and anytime.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Offering tasty and healthy food all around the world.</p>
+            </div>
+        </div>
+</section>
+
+
+<!----Footer-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>AUA is an international, multi-disciplinary learning community in the American liberal arts tradition.</p>
+</section>
+<!----------------------Javascript for Toggle Menu----------------------------->        
+        <script>
+            var navLinks = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right= "0";
+            }
+            function hideMenu(){
+                navLinks.style.right= "-200px";
+            }
+        </script>
+    </body>
+</html>
